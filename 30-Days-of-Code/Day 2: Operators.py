@@ -3,3 +3,14 @@
 #Taking input for mealCost, tipPercent and taxPercent
 
 mealCost = float(raw_input())
+tipPercent = int(raw_input())
+taxPercent = int(raw_input())
+
+#Calculating totalCost
+totalCost = mealCost + (mealCost*tipPercent/100) + (mealCost*taxPercent/100)
+
+#rounding off totolCost
+totalCost = int(round(totalCost))
+
+#printing final result
+print "The total meal cost is " + str(totalCost) + " dollars."
